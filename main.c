@@ -1,17 +1,23 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void CL() {
-    char command[50];
+    char *command;
 
     printf("Enter a command: ");
-    scanf("%[^\n]", command);
+    scanf(" %c", &command);
 
-    printf("%s \n", command);
-
+    if ((command = "help")) {
+        system("cat helpFiles/FOMOSCL.txt");
+    } else {
+        printf("Uknown");
+    }
+    exit(0);
 }
 
 int main() {
     printf("FOMOSv2-CL \n");
+
     CL();
 
     return 0;
