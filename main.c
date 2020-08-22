@@ -1,6 +1,18 @@
 #include <stdio.h>
 
-int main () {
-  printf("FOMOSv2-CL \n");
-  return 0;
+void CL() {
+    char command[50];
+
+    printf("Enter a command: ");
+    scanf("%[^\n]", command);
+
+    printf("%s \n", command);
+
+}
+
+int main() {
+    printf("FOMOSv2-CL \n");
+    CL();
+
+    return 0;
 }
