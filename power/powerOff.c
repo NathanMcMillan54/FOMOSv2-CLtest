@@ -1,6 +1,6 @@
 #include <stdio.h>
 
 int main() {
-    printf("power off");
+    printf("power off \n");
     return 0;
 }
