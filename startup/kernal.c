@@ -1,4 +1,5 @@
 #include "multiboot.h"
+#include <stdlib.h>
 
 /* Macros. */
 
@@ -133,6 +134,9 @@ cmain (unsigned long magic, unsigned long addr)
                     (unsigned) (mmap->len & 0xffffffff),
                     (unsigned) mmap->type);
     }
+
+    system("gcc -Wall startup/startFOMOSCL.c -o startup/startFOMOSCL");
+    system("./startup/startFOMOSCL");
 
     /* Draw diagonal blue line. */
     if (CHECK_FLAG (mbi->flags, 12))
