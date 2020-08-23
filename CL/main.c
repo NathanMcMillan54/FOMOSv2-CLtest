@@ -10,15 +10,16 @@ void CL() {
     printf("Enter command: ");
     scanf("%s", command);
     if(!strcmp(command, "help")) {
-        system("cat helpFiles/FOMOSCL.txt");
+        system("gcc -Wall helpFiles/help.c -o helpFiles/help");
+        system("./helpFiles/help");
     } else if (!strcmp(command, "powerOff")) {
-        system("gcc -Wall ../power/powerOff.c -o ../power/powerOff");
-        system("../power/powerOff");
+        system("gcc -Wall power/powerOff.c -o power/powerOff");
+        system("sudo ./power/powerOff");
         powerOff = 0;
     } else if (!strcmp(command, "restart")) {
-        system("gcc -Wall ../power/restart.c -o ../power/restart");
+        system("gcc -Wall ower/restart.c -o power/restart");
         printf("Enter your password \n");
-        system("sudo ../power/restart");
+        system("sudo ./power/restart");
         powerOff = 0;
     }
     else {

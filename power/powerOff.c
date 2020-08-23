@@ -1,6 +1,7 @@
-#include <stdio.h>
+#include <unistd.h>
+#include <sys/reboot.h>
 
 int main() {
-    printf("power off \n");
-    return 0;
+    sync();
+    reboot(RB_POWER_OFF);
 }

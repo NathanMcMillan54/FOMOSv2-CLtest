@@ -5,18 +5,18 @@
 int main() {
     int option;
 
-    printf("1) FOMOSCL");
-    printf("2) Commands");
+    printf("1) FOMOSCL \n");
+    printf("2) Commands \n");
 
     printf("Enter a number: ");
     scanf("%d", &option);
 
     switch(option) {
         case 1 :
-            system("cat ../textFiles/FOMOSCL.txt");
+            system("cat helpFiles/FOMOSCL.txt");
             break;
         case 2 :
-            system("cat ../textFiles/commands.txt");
+            system("cat helpFiles/commands.txt");
             break;
         case 3 :
             printf("ok \n" );

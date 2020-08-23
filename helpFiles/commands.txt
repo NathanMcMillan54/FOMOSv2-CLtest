@@ -1,0 +1,11 @@
+Command     | What is does                                  |
+------------|------------------------------------------------
+help        | This command will show you how to use commands|
+            | and how to use FOMOSv2-CL.                    |
+-------------------------------------------------------------
+powerOff    | This command will shutdown FOMOS and your     |
+            | device.                                       |
+-------------------------------------------------------------
+restart     | This command will restart FOMOS and your      |
+            | device                                        |
+-------------------------------------------------------------
