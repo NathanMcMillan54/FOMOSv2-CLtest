@@ -7,6 +7,7 @@ int main() {
 
     printf("1) FOMOSCL \n");
     printf("2) Commands \n");
+    printf("3) Problems \n");
 
     printf("Enter a number: ");
     scanf("%d", &option);
@@ -19,13 +20,11 @@ int main() {
             system("cat helpFiles/commands.txt");
             break;
         case 3 :
-            printf("ok \n" );
-            break;
-        case 4 :
-            printf("ok \n" );
+            system("cat helpFiles/problems.txt");
             break;
         default :
             printf("NaN \n" );
+            printf("Exiting help menu... \n");
     }
 
     return 0;
