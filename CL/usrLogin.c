@@ -7,6 +7,6 @@ void login() {
 }
 
 int main() {
-    printf("Login to");
+    printf("Login to\n");
     login();
 }
