@@ -2,4 +2,8 @@
 
 echo "This file is for updating things installed with iwi"
 
-cd CL/usrFiles
+read -p "UPDATE " iwiURL
+
+cd CL/usrFiles/iwiURL
+
+git pull
