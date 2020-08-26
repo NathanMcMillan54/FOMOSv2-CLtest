@@ -1,6 +1,119 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "../headerFiles/openFile.h"
+
+int oFOMOSCL() {
+    FILE *fp;
+    char str[MAXCHAR];
+    char *fileName = "helpFiles/FOMOSCL.txt";
+
+    fp = fopen(fileName, "r");
+    if (fp == NULL){
+        printf("Could not open this help file %s", fileName);
+        return 1;
+    }
+    while (fgets(str, MAXCHAR, fp) != NULL)
+        printf("%s", str);
+    fclose(fp);
+    return 0;
+}
+
+int oCommands() {
+    FILE *fp;
+    char str[MAXCHAR];
+    char *fileName = "helpFiles/commands.txt";
+
+    fp = fopen(fileName, "r");
+    if (fp == NULL){
+        printf("Could not open this help file %s", fileName);
+        return 1;
+    }
+    while (fgets(str, MAXCHAR, fp) != NULL)
+        printf("%s", str);
+    fclose(fp);
+    return 0;
+}
+
+int oProblems() {
+    FILE *fp;
+    char str[MAXCHAR];
+    char *fileName = "helpFiles/problems.txt";
+
+    fp = fopen(fileName, "r");
+    if (fp == NULL){
+        printf("Could not open this help file %s", fileName);
+        return 1;
+    }
+    while (fgets(str, MAXCHAR, fp) != NULL)
+        printf("%s", str);
+    fclose(fp);
+    return 0;
+}
+
+int oIwi() {
+    FILE *fp;
+    char str[MAXCHAR];
+    char *fileName = "helpFiles/iwi.txt";
+
+    fp = fopen(fileName, "r");
+    if (fp == NULL){
+        printf("Could not open this help file %s", fileName);
+        return 1;
+    }
+    while (fgets(str, MAXCHAR, fp) != NULL)
+        printf("%s", str);
+    fclose(fp);
+    return 0;
+}
+
+int oUsrNam() {
+    FILE *fp;
+    char str[MAXCHAR];
+    char *fileName = "helpFiles/usrNam.txt";
+
+    fp = fopen(fileName, "r");
+    if (fp == NULL){
+        printf("Could not open this help file %s", fileName);
+        return 1;
+    }
+    while (fgets(str, MAXCHAR, fp) != NULL)
+        printf("%s", str);
+    fclose(fp);
+    return 0;
+}
+
+int oPowerOff() {
+    FILE *fp;
+    char str[MAXCHAR];
+    char *fileName = "helpFiles/powerOff.txt";
+
+    fp = fopen(fileName, "r");
+    if (fp == NULL){
+        printf("Could not open this help file %s", fileName);
+        return 1;
+    }
+    while (fgets(str, MAXCHAR, fp) != NULL)
+        printf("%s", str);
+    fclose(fp);
+    return 0;
+}
+
+int oRestart() {
+    FILE *fp;
+    char str[MAXCHAR];
+    char *fileName = "helpFiles/restart.txt";
+
+    fp = fopen(fileName, "r");
+    if (fp == NULL){
+        printf("Could not open this help file %s", fileName);
+        return 1;
+    }
+    while (fgets(str, MAXCHAR, fp) != NULL)
+        printf("%s", str);
+    fclose(fp);
+    return 0;
+}
 
 int main() {
     int option;
@@ -9,22 +122,35 @@ int main() {
     printf("2) Commands \n");
     printf("3) Problems \n");
     printf("4) iwi \n");
+    printf("5) usrNam \n");
+    printf("6) powerOff \n");
+    printf("7) restart \n");
 
     printf("Enter a number: ");
     scanf("%d", &option);
 
     switch(option) {
         case 1 :
-            system("cat helpFiles/FOMOSCL.txt");
+            oFOMOSCL();
             break;
         case 2 :
-            system("cat helpFiles/commands.txt");
+            oCommands();
             break;
         case 3 :
-            system("cat helpFiles/problems.txt");
+            oProblems();
             break;
         case 4:
-            system("cat helpFiles/iwi.txt");
+            oIwi();
+            break;
+        case 5:
+            oUsrNam();
+            break;
+        case 6:
+            oPowerOff();
+            break;
+        case 7:
+            oRestart();
+            break;
         default :
             printf("NaN \n" );
             printf("Exiting help menu... \n");

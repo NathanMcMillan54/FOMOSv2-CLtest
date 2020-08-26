@@ -3,4 +3,4 @@ project(FOMOSv2-CLtest C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(FOMOSv2-CLtest CL/main.c usrNam/usrNam.c usrNam/usrNam.h CL/usrLogin.c startup/startFOMOSCL.c startup/kernal.c startup/multiboot.h power/powerOff.c power/restart.c helpFiles/help.c iwi/iwi.c time/12hrTime.c time/24hrTime.c)
+add_executable(FOMOSv2-CLtest CL/main.c usrNam/usrNam.c usrNam/usrNam.h CL/usrLogin.c startup/startFOMOSCL.c startup/kernal.c startup/multiboot.h power/powerOff.c power/restart.c helpFiles/help.c iwi/iwi.c time/12hrTime.c time/24hrTime.c headerFiles/openFile.h)
