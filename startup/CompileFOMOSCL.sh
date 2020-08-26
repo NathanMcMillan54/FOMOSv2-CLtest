@@ -6,5 +6,6 @@ gcc -Wall CL/main.c -o CL/main
 gcc -Wall helpFiles/help.c -o helpFiles/help
 gcc -Wall power/powerOff.c -o power/powerOff
 gcc -Wall power/restart.c -o power/restart
+gcc -Wall iwi/iwi.c -o iwi/iwi
 
 sh startup/StartCL.sh

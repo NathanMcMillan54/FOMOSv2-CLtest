@@ -21,6 +21,9 @@ void CL() {
         printf("Enter your password \n");
         system("sudo ./power/restart");
         powerOff = 0;
+    } else if (!strcmp(command, "iwi")) {
+        system("gcc -Wall iwi/iwi.c -o iwi/iwi");
+        system("iwi/iwi");
     }
     else {
         printf("Unknown command \n");
