@@ -33,6 +33,9 @@ void CL() {
     } else if (!strcmp(command, "usrNam")) {
         system("gcc -Wall usrNam/usrNam.c -o usrNam/usrNam");
         system("./usrNam/usrNam");
+    } else if (!strcmp(command, "netConnect")) {
+        system("gcc -Wall netConnect/netConnect.c -o netConnect/netConnect");
+        system("./netConnect/netConnect");
     }
     /*else if (!strcmp(command, time && hr12)) {
         system("gcc -Wall time/12hrTime.c -o time/12hrTime");

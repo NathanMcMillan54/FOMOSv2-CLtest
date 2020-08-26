@@ -7,5 +7,7 @@ gcc -Wall helpFiles/help.c -o helpFiles/help
 gcc -Wall power/powerOff.c -o power/powerOff
 gcc -Wall power/restart.c -o power/restart
 gcc -Wall iwi/iwi.c -o iwi/iwi
+gcc -Wall usrNam/usrNam.c -o usrNam/usrNam
+gcc -Wall netConnect/netConnect.c -o netConnect/netConnect
 
 sh startup/StartCL.sh
