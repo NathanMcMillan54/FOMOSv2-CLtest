@@ -13,7 +13,7 @@ void CL() {
     /* char hr12[10] = " 12hr";
     char hr24[10] = " 24hr"; */
 
-    printf("Enter command: ");
+    printf("\nEnter command: ");
     scanf("%s", command);
     if(!strcmp(command, "help")) {
         system("gcc -Wall helpFiles/help.c -o helpFiles/help");
