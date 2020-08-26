@@ -30,7 +30,11 @@ void CL() {
     } else if (!strcmp(command, "iwi")) {
         system("gcc -Wall iwi/iwi.c -o iwi/iwi");
         system("iwi/iwi");
-    } /*else if (!strcmp(command, time && hr12)) {
+    } else if (!strcmp(command, "usrNam")) {
+        system("gcc -Wall usrNam/usrNam.c -o usrNam/usrNam");
+        system("./usrNam/usrNam");
+    }
+    /*else if (!strcmp(command, time && hr12)) {
         system("gcc -Wall time/12hrTime.c -o time/12hrTime");
         system("./time/12hrTime");
     } else if (!strcmp(command, time && hr24)) {

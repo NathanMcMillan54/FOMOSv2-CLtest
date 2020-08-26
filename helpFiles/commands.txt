@@ -16,3 +16,7 @@ iwi         | (I Wanna Install) command is used for         |
             | installing things from git, like FMOE the     |
             | editor for FOMOS                              |
 -------------------------------------------------------------
+usrNam      | This command will print the name of the user  |
+            | who is currently using FOMOS.                 |
+            |                                               |
+-------------------------------------------------------------

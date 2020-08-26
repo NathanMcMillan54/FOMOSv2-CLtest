@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 void login() {
-    system("echo $USER");
+    system("./usrNam/usrNam");
     system("sudo ./CL/main");
 }
 
