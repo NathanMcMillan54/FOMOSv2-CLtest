@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
-ssid=$1
-password=$2
+read -p "Type network name: " ssid
+read -p "Type $ssid password: " password
 
-echo "Connected to $1"
 
 sudo nmcli dev wifi connect ${ssid} password ${password}
+
+echo "Connected to $ssid"

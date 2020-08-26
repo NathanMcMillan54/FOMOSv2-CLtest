@@ -115,6 +115,22 @@ int oRestart() {
     return 0;
 }
 
+int oNetConnect() {
+    FILE *fp;
+    char str[MAXCHAR];
+    char *fileName = "helpFiles/netConnect.txt";
+
+    fp = fopen(fileName, "r");
+    if (fp == NULL){
+        printf("Could not open this help file %s", fileName);
+        return 1;
+    }
+    while (fgets(str, MAXCHAR, fp) != NULL)
+        printf("%s", str);
+    fclose(fp);
+    return 0;
+}
+
 int main() {
     int option;
 
@@ -125,6 +141,7 @@ int main() {
     printf("5) usrNam \n");
     printf("6) powerOff \n");
     printf("7) restart \n");
+    printf("8) netConnect \n");
 
     printf("Enter a number: ");
     scanf("%d", &option);
@@ -150,6 +167,9 @@ int main() {
             break;
         case 7:
             oRestart();
+            break;
+        case 8:
+            oNetConnect();
             break;
         default :
             printf("NaN \n" );

@@ -6,10 +6,11 @@ If this doesn't go well it will probably end up like FOMOSv1 except it's a termi
 
 # Setup
 ```shell script
-sh startup/Compile.sh
+sh setup.sh
 ```
 
-That compiles and then runs FOMOSv2
+That will install all requirements then compile and run FOMOS
+
 #
 # For developers
 
