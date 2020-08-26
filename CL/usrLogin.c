@@ -8,4 +8,5 @@ void login() {
 
 int main() {
     printf("Login to");
+    login();
 }
