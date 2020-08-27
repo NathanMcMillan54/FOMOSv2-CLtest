@@ -32,6 +32,9 @@ void CL() {
     } else if (!strcmp(command, "netConnect")) {
         system("gcc -Wall netConnect/netConnect.c -o netConnect/netConnect");
         system("./netConnect/netConnect");
+    } else if (!strcmp(command, "rndmstf")) {
+        system("gcc -Wall rndmstf/rndmstf.c -o rndmstf/rndmstf");
+        system("./rndmstf/rndmstf");
     }
     else {
         printf("Unknown command \n");
