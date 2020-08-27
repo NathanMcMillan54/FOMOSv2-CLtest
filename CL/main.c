@@ -9,10 +9,6 @@ void CL() {
 
     char command[50];
 
-    char time[10] = "time";
-    /* char hr12[10] = " 12hr";
-    char hr24[10] = " 24hr"; */
-
     printf("\nEnter command: ");
     scanf("%s", command);
     if(!strcmp(command, "help")) {
@@ -37,13 +33,6 @@ void CL() {
         system("gcc -Wall netConnect/netConnect.c -o netConnect/netConnect");
         system("./netConnect/netConnect");
     }
-    /*else if (!strcmp(command, time && hr12)) {
-        system("gcc -Wall time/12hrTime.c -o time/12hrTime");
-        system("./time/12hrTime");
-    } else if (!strcmp(command, time && hr24)) {
-        system("gcc -Wall time/24hrTime.c -o time/12hrTime");
-        system("./time/24hrTime");
-    }*/
     else {
         printf("Unknown command \n");
     }
