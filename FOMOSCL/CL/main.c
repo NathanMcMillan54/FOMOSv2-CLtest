@@ -39,9 +39,6 @@ void CL() {
     else {
         printf("Unknown command \n");
     }
-
-}
-                 a
 void printTime() {
     time_t rawtime;
     struct tm *timeinfo;
