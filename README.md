@@ -9,7 +9,7 @@ If this doesn't go well it will probably end up like FOMOSv1 except it's a termi
 sh setup.sh
 ```
 
-That will install all requirements then compile and run FOMOS
+Running this will setup FOMOS and teach you the basics of FOMOS.
 
 #
 # For developers
