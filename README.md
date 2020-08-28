@@ -24,3 +24,10 @@ Also don't run anything in ```multiboot/``` that is for making a BIOS.
 
 A lot of stuff in the future will probably be copied from Linux, for now ```multiboot/``` will just be a directory that 
 makes FOMOS look like a real OS.
+
+
+If you are a developer and want to do stuff with ```Fopen``` then you should run this:
+```shell script
+cd FOMOSCL/CL/usrFiles/
+touch test.txt
+```
