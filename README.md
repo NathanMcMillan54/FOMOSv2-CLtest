@@ -19,3 +19,5 @@ After you're done working on FOMOSv2 run:
 ```shell script
 sh deleteCompiledFiles.sh
 ```
+
+Also don't runn anything in ```multiboot``` that is for making a BIOS.

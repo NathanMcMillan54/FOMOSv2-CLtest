@@ -2,8 +2,9 @@
 
 echo "Deleting compiled files."
 echo "  "
-rm -rf FOMOSCL/CL/main
-rm -rf FOMOSCL/CL/usrLogin
+cd FOMOSCL/
+rm -rf CL/main
+rm -rf CL/usrLogin
 rm -rf helpFiles/help
 rm -rf power/powerOff
 rm -rf power/restart

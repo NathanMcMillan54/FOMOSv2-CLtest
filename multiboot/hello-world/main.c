@@ -31,6 +31,6 @@ void clear(enum color bg) {
 
 int __attribute__((noreturn)) main() {
     clear(BLACK);
-    puts(0, 0, BRIGHT, BLACK, "FOMOSv2-CL");
+    puts(0, 0, BRIGHT, BLACK, "hello world");
     while (1);
 }
