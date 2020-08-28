@@ -2,7 +2,7 @@
 #include <pwd.h>
 #include <stdio.h>
 #include <zconf.h>
-#include "usrNam.h"
+#include "../headerFiles/usrNam.h"
 
 int main(int argc, char *argv[]) {
     register struct passwd *pw;

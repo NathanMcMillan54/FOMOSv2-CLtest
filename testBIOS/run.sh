@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# this is for compiling everything in the bios directory
+
 set -eux
 as -ggdb3 --32 -o entry.o entry.S
 gcc -c -ggdb3 -m16 -ffreestanding -fno-PIE -nostartfiles -nostdlib -o main.o -std=c99 main.c
