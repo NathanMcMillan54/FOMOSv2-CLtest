@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
 
+echo "Running requirements.sh"
 sh requirements.sh
-sh startup/CompileFOMOSCL.sh
+echo "Running compile file"
+sh FOMOSCL/startup/CompileFOMOSCL.sh
+

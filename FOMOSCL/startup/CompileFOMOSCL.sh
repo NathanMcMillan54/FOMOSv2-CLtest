@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
+cd FOMOSCL/
 echo "Compiling Files"
-gcc -Wall CL/usrLogin.c -o FOMOSCL/CL/usrLogin
-gcc -Wall CL/main.c -o FOMOSCL/CL/main
+gcc -Wall CL/usrLogin.c -o CL/usrLogin
+gcc -Wall CL/main.c -o CL/main
 gcc -Wall helpFiles/help.c -o helpFiles/help
 gcc -Wall power/powerOff.c -o power/powerOff
 gcc -Wall power/restart.c -o power/restart
