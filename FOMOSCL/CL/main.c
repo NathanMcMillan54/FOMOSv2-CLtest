@@ -35,6 +35,9 @@ void CL() {
     } else if (!strcmp(command, "rndmstf")) {
         system("gcc -Wall ../rndmstf/rndmstf.c -o ../rndmstf/rndmstf");
         system("../rndmstf/rndmstf");
+    } else if (!strcmp(command, "Fopen")) {
+        system("gcc -Wall Fopen/Fopen.c -o Fopen/Fopen");
+        system("./Fopen/Fopen");
     }
     else {
         printf("Unknown command \n");
