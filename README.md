@@ -20,4 +20,7 @@ After you're done working on FOMOSv2 run:
 sh deleteCompiledFiles.sh
 ```
 
-Also don't run anything in ```multiboot``` that is for making a BIOS.
+Also don't run anything in ```multiboot/``` that is for making a BIOS.
+
+A lot of stuff in the future will probably be copied from Linux, for now ```multiboot/``` will just be a directory that 
+makes FOMOS look like a real OS.
