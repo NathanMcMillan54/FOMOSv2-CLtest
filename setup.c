@@ -9,23 +9,24 @@ void CL() {
 
     char command[50];
 
+    printf("Connect to wifi by typing 'netConnect' if you need help type 'help' in the command line.");
     printf("\nEnter command: ");
     scanf("%s", command);
     if(!strcmp(command, "help")) {
         system("gcc -Wall helpFiles/help.c -o helpFiles/help");
         system("./helpFiles/help");
     } else if (!strcmp(command, "powerOff")) {
-        system("gcc -Wall power/powerOff.c -o power/powerOff");
-        system("sudo ./power/powerOff");
+        system("gcc -Wall FOMOSCL/power/powerOff.c -o FOMOSCL/power/powerOff");
+        system("sudo ./FOMOSCL/power/powerOff");
         powerOff = 0;
     } else if (!strcmp(command, "restart")) {
-        system("gcc -Wall ower/restart.c -o power/restart");
+        system("gcc -Wall FOMOSCL/power/restart.c -o FOMOSCL/power/restart");
         printf("Enter your password \n");
-        system("sudo ./power/restart");
+        system("sudo ./FOMOSCL/power/restart");
         powerOff = 0;
     } else if (!strcmp(command, "netConnect")) {
-        system("gcc -Wall netConnect/netConnect.c -o netConnect/netConnect");
-        system("./netConnect/netConnect");
+        system("gcc -Wall FOMOSCL/netConnect/netConnect.c -o FOMOSCL/netConnect/netConnect");
+        system("./FOMOSCL/netConnect/netConnect");
     } else {
         printf("Unknown command \n");
     }
