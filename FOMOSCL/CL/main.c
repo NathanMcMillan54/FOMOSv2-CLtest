@@ -8,10 +8,9 @@ int powerOff = 1;
 void CL() {
 
     char command[50];
-    char argument[50];
 
     printf("\nEnter command: ");
-    scanf("%s %s", command, argument);
+    scanf("%s", command);
     if(!strcmp(command, "help")) {
         system("gcc -Wall helpFiles/help.c -o helpFiles/help");
         system("./helpFiles/help");
@@ -36,8 +35,8 @@ void CL() {
     } else if (!strcmp(command, "rndmstf")) {
         system("gcc -Wall ../rndmstf/rndmstf.c -o ../rndmstf/rndmstf");
         system("../rndmstf/rndmstf");
-    } else if (!strcmp(command, "Fopen" && strcmp(argument, " test"))) {
-        printf("this works \n");
+    } else if (!strcmp(command, "Fopen")) {
+        system("./Fopen/Fopen");
     }
     else {
         printf("Unknown command \n");

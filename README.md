@@ -4,6 +4,8 @@ This is just a test for FOMOS trying to make it a real OS
 
 If this doesn't go well it will probably end up like FOMOSv1 except it's a terminal.
 
+This is just a terminal replacement for Linux.
+
 # Setup
 ```shell script
 sh setup.sh

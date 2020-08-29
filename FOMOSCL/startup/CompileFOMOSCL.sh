@@ -10,5 +10,6 @@ gcc -Wall power/restart.c -o power/restart
 gcc -Wall iwi/iwi.c -o iwi/iwi
 gcc -Wall usrNam/usrNam.c -o usrNam/usrNam
 gcc -Wall netConnect/netConnect.c -o netConnect/netConnect
+gcc -Wall Fopen/Fopen.c -o Fopen/Fopen
 
 sh startup/StartCL.sh

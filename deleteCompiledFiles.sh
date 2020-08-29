@@ -11,5 +11,6 @@ rm -rf power/restart
 rm -rf iwi/iwi
 rm -rf usrNam/usrNam
 rm -rf netConnect/netConnect
+rm -rf Fopen/Fopen
 echo "  "
 echo "Deleting compiled files done."
