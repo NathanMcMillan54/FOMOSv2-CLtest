@@ -1,0 +1,5 @@
+This directory will be the start of FOMOS becoming a real OS.
+
+This entire repository was just a test to make FOMOS a real OS.
+
+On 2020/8/29 9:29 I (Nathan McMillan) have decided that FOMOSv2-CLtest is done and FOMOSv2-CL can start being made.
