@@ -31,3 +31,26 @@ If you are a developer and want to do stuff with ```Fopen``` then you should run
 cd FOMOSCL/CL/usrFiles/
 touch test.txt
 ```
+
+#
+In ```multiboot/``` that is where testing is done for making a BIOS script. Everything in ```multiboot/``` is copied and is just for trying to figure out how to write a BIOS for FOMOS.
+
+
+Here is how to run ```hello-world/``` in ```multiboot/```
+
+```shell script
+make -C multiboot/hello-world run
+qemu-system-i386 -kernel 'main.elf'
+```
+
+When you run ```main.elf``` it will return:
+```shell script
+hello world
+``` 
+
+To make it run as a 'operating system' on a device run:
+```shell script
+qemu-system-x86_64 -drive file=main.img,format=raw
+```
+
+You can burn ```main.img``` to a USB and run it as an 'operating system' that just returns ```hello world```. But that is a good start to making FOMOS a real OS.
