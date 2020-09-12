@@ -1,6 +1,6 @@
 # FOMOSv2-CLtest
 
-This is just a test for FOMOS trying to make it a real OS
+This is just a test to try to make FOMOS into a real OS
 
 If this doesn't go well it will probably end up like FOMOSv1 except it's a terminal.
 
